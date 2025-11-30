@@ -1,0 +1,146 @@
+.header {
+    background-color: #C8C4C1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    border-radius: 5px;
+    padding-right: 1em;
+}
+
+.logotyp {
+    height: auto;
+    width: 6em;
+    padding: 1em;
+}
+
+/* Desktopmenyn (menu-nav) */
+.menu-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.menu-nav a,
+.menu-nav p {
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* CTA-knappen (Boka nu) */
+.cta-link {
+    border: 2px solid #000000;
+    padding: 0.5rem 1.2rem;
+}
+
+/* Döljer hamburgaren på desktop */
+.header-nav {
+    display: none;
+}
+
+/* --------- Stil på hamburgarikonen --------- */
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+}
+
+.bars .bar {
+    width: 24px;
+    height: 3px;
+    background-color: #000;
+}
+
+/* --------- Mobilanpassning --------- */
+
+@media (max-width: 790px) {
+
+    .header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    /* Visa hamburgaren */
+    .header-nav {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        /* avstånd från toppen */
+        right: 1rem;
+        /* avstånd från höger */
+        margin: 0;
+        /* tar bort auto-right som sköt den nedåt */
+    }
+
+    .menu-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .bars {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 18px;
+    }
+
+    .bars .bar {
+        width: 24px;
+        height: 3px;
+        background-color: #000;
+    }
+
+    /* Dölj desktop-menyn */
+    .menu-nav {
+        display: none;
+        background-color: #C8C4C1;
+        width: 100%;
+        padding: 1.5rem 0;
+        position: static;
+    }
+
+    /* Visa menyn när togglad */
+    .menu-nav.open {
+        display: block;
+    }
+
+    .menu-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    .menu-nav a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .cta-link {
+        margin-top: 0.75rem;
+    }
+}
