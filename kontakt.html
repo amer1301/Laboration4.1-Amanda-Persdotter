@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon_catcomfort.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Manrope" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="images/CatComfortLogga.png" alt="Företagets namn och logotyp" class="logotyp">
+        </a>
+        <nav class="header-nav">
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="bars">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </span>
+                <span class="close" style="display: none;">
+                    <span class="close-icon">X</span>
+                </span>
+            </button>
+        </nav>
+        <nav class="menu-nav">
+            <ul id="nav-menu">
+                <li><a href="index.html">Startsida</a></li>
+                <li><a href="katter.html">Våra katter</a></li>
+                <li><a href="information.html">Information</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="boka.html">Bokning</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+
+        <section class="firstpagePicture">
+    <img src="images/cat5.webp" alt="två katter som sover bredvid varandra">
+
+    <h1>CatComfort</h1>
+
+</section>
+<div class="contact-box">
+    <h2>Kontakta oss</h2>
+
+    <form action="skicka.php" method="POST">
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Meddelande:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="send-btn">
+            Skicka
+            <img src="images/kontakt.png" alt="ikon" class="btn-icon">
+        </button>
+    </form>
+</div>
+
+
+
+          <footer class="footer">
+     <p>Laboration2.1 - Skapa statisk webbplats</p>
+  <p>Copyright &copy; Amanda Persdotter</p>
+  <p>Bilder tagna från https://pixabay.com/images/search/cat/</p>
+  <p>Ikoner tagna från https://www.freepik.com/search?format=search&iconType=standard&last_filter=query&last_value=cat&query=cat&type=icon</p>
+  </footer>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

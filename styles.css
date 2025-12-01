@@ -293,6 +293,14 @@ h2 {
     margin: 2em auto;
 }
 
+h3 {
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.7em;
+    font-weight: 500;
+    margin: 2em auto;
+}
+
 .gallery p {
     font-family: 'Fredoka', sans-serif;
     font-size: 2em;
@@ -338,11 +346,145 @@ border: 2px solid #000000;
   padding: 25px;
   border-radius: 10px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+      border: 1px solid #000;
 }
 
 .info-box h2 {
   margin-top: 0;
 }
+
+.contact-box {
+  position: relative;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.12);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+.contact-box h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.contact-box label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.send-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  width: 100%;
+  background: #C8C4C1;
+  color: #000000;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.send-btn:hover {
+  background: #646261;
+}
+
+.btn-icon {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  opacity: 0.9;
+}
+
+.booking-container {
+  padding: 60px 20px;
+}
+
+.booking-form {
+  position: relative;
+  background-image: url('images/cat7.webp');
+  background-size: cover;
+  background-position: center;
+  padding: 420px 40px 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.booking-form::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.booking-form input,
+.booking-form textarea,
+.booking-form button {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.booking-form label {
+    color: #ffffff;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+    font-size: 1.5em;
+}
+
+.booking-form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: black;
+}
+
+.book-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  width: 100%;
+  background: #C8C4C1;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.book-btn:hover {
+  background: #B1ADA9;
+}
+
 
 
 
