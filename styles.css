@@ -37,11 +37,16 @@
     margin: 0;
 }
 
-/* CTA-knappen (Boka nu) */
 .menu-nav a:hover {
     border: 2px solid #000000;
     padding: 0.5rem 1.2rem;
 }
+
+nav ul li a.active {
+    border: 2px solid #000000;
+    padding: 0.5rem 1.2rem;
+}
+
 
 /* Döljer hamburgaren på desktop */
 .header-nav {
@@ -485,6 +490,52 @@ border: 2px solid #000000;
   background: #B1ADA9;
 }
 
+.news-section {
+  padding: 40px 20px;
+}
+
+.news-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.news-card {
+  flex: 1;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.08);
+  border: 1px solid #000;
+}
+
+.news-card img {
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.news-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.news-card h3 a {
+  color: #000;
+  text-decoration: underline;
+}
+
+.news-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Responsivt – stapla på små skärmar */
+@media (max-width: 800px) {
+  .news-grid {
+    flex-direction: column;
+  }
+}
 
 
 
