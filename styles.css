@@ -284,6 +284,9 @@ body {
     padding: 15px 10px;
     font-size: 1em;
     margin-top: 40px;
+    border-radius: 5px;
+    padding-right: 1em;
+    border: 1px solid #000;
 }
 
 .footer p {
@@ -316,7 +319,7 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 5em;
-    max-width: 60%;
+    max-width: 90%;
     margin: 0 auto;
 }
 
@@ -410,6 +413,7 @@ h3 {
 
 .send-btn:hover {
     background: #646261;
+    color: white;
 }
 
 .btn-icon {
@@ -420,7 +424,7 @@ h3 {
 }
 
 .booking-container {
-    padding: 60px 20px;
+    padding: 30px 20px;
 }
 
 .booking-form {
@@ -444,8 +448,7 @@ h3 {
 }
 
 .booking-form input,
-.booking-form textarea,
-.booking-form button {
+.booking-form textarea {
     position: relative;
     z-index: 2;
     color: white;
@@ -472,23 +475,6 @@ h3 {
     border-radius: 8px;
     font-size: 16px;
     color: black;
-}
-
-.book-btn {
-    margin-top: 20px;
-    padding: 12px 20px;
-    width: 100%;
-    background: #C8C4C1;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.book-btn:hover {
-    background: #B1ADA9;
 }
 
 .news-section {
@@ -531,16 +517,7 @@ h3 {
     line-height: 1.4;
 }
 
-/* Responsivt – stapla på små skärmar */
-@media (max-width: 800px) {
-    .news-grid {
-        flex-direction: column;
-    }
-}
-
-
-
-/* mindre skärmar */
+/* Mindre skärmar */
 @media (max-width: 1300px) {
     .about-section {
         padding: 4rem 4%;
@@ -553,7 +530,6 @@ h3 {
 
 @media (max-width: 1099px) {
 
-    /* Visa hamburgaren */
     .header-nav {
         display: block;
         position: absolute;
@@ -581,7 +557,6 @@ h3 {
         background-color: #000;
     }
 
-    /* Dölj desktop-menyn */
     .menu-nav {
         display: none;
         background-color: #C8C4C1;
@@ -590,7 +565,6 @@ h3 {
         position: static;
     }
 
-    /* Visa menyn när togglad */
     .menu-nav.open {
         display: block;
     }
@@ -610,17 +584,20 @@ h3 {
         text-decoration: none;
     }
 
-    .firstpagePicture h1 {
+    .firstpagePicture h1,
+    .firstpagePicture-black h1 {
         font-size: 2.7em;
     }
 
-    .firstpagePicture h2 {
+    .firstpagePicture h2,
+    .firstpagePicture-black h2 {
         font-size: 1.5em;
     }
 
     .about-section {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
+        margin: 0 auto;
         padding: 1em 16%;
     }
 
@@ -632,13 +609,14 @@ h3 {
 
     .about-image {
         width: 100%;
-        /* bilden fullbredd */
         margin-top: 0;
     }
 }
 
-
 @media (max-width: 790px) {
+        .news-grid {
+        flex-direction: column;
+    }
 
     .header {
         position: relative;
@@ -653,11 +631,13 @@ h3 {
     }
 
 
-    .firstpagePicture h1 {
+    .firstpagePicture h1,
+    .firstpagePicture-black h1 {
         font-size: 2em;
     }
 
-    .firstpagePicture h2 {
+    .firstpagePicture h2,
+    .firstpagePicture-black h2 {
         font-size: 1em;
         margin-top: 1em;
     }
@@ -668,13 +648,12 @@ h3 {
 
     .about-section {
         flex-direction: column;
-        /* stapla på höjden */
-        text-align: center;
-        /* centrera text */
+        text-align: left;
         padding: 1em 8%;
     }
 
-    .hero-buttons {
+    .hero-buttons,
+    .hero-buttons-black {
         position: absolute;
         z-index: 2;
         left: 50%;
@@ -682,17 +661,110 @@ h3 {
         gap: 1em;
     }
 
-    .hero-btn {
+    .hero-btn,
+    .hero-btn-black {
         padding: 0.5rem 1.5rem;
     }
+
+ .gallery {
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+
+    .item img {
+    width: 80%;
 }
 
+h2 {
+    font-size: 1.5em;
+    margin: 1em auto;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+.gallery p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+}
+
+@media (max-width: 660px) {
+
+    .booking-form label {
+        font-size: 1.2em;
+    }
+
+    .info-row {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .info-box {
+        width: 90%;
+    }
+}
 @media (max-width: 550px) {
-    .firstpagePicture h1 {
+    .firstpagePicture h1,
+    .firstpagePicture-black h1 {
         font-size: 1.5em;
     }
 
     .logotyp {
         width: 3em;
     }
+}
+
+@media (max-width: 446px) {
+
+      .firstpagePicture h2,
+  .firstpagePicture-black h2 {
+    top: 12%;
+    left: 0;
+    right: 0;
+    transform: none;
+    width: 100%;
+    padding: 0 1rem;
+    text-align: center;
+  }
+        .about-text h2 {
+        margin-top: 0;
+        font-size: 1.2em;
+    }
+
+        .logotyp {
+        width: 2.5em;
+    }
+
+    .firstpagePicture h1,
+    .firstpagePicture-black h1 {
+        font-size: 1.3em;
+    }
+
+    .hero-btn,
+    .hero-btn-black {
+    gap: 0.2rem;
+    padding: 0 1rem;
+    font-weight: 300;
+    }
+
+    .hero-btn .arrow,
+    .hero-btn-black .arrow {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin: 1em auto;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.gallery p {
+    font-size: 1em;
+}
 }
