@@ -725,9 +725,13 @@ h3 {
     right: 0;
     transform: none;
     width: 100%;
-    padding: 0 1rem;
     text-align: center;
   }
+
+      .news-card {
+        padding: 5px;
+    }
+    
         .about-text h2 {
         margin-top: 0;
         font-size: 1.2em;
