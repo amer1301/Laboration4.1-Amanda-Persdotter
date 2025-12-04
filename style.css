@@ -517,6 +517,26 @@ h3 {
     line-height: 1.4;
 }
 
+.news-excerpt {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.news-readmore {
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+    padding-bottom: 2px;
+}
+
+.news-readmore:hover {
+    border-bottom-color: #666;
+}
+
+
 /* Mindre skärmar */
 @media (max-width: 1300px) {
     .about-section {
